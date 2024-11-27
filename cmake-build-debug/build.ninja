@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: CA2_C___JianfengHan_SD3A
+# Project: ADS_2024_CA2_Jianfeng_Han
 # Configurations: Debug
 # =============================================================================
 
@@ -39,44 +39,56 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/xhanhan/Library/CloudStorage/OneDrive-DundalkInstituteofTechnology/DKIT$ Year3/Year3$ Algorithms$ and$ Data$ Structures/CA2_C++_JianfengHan_SD3A/cmake-build-debug/
+cmake_ninja_workdir = /Users/xhanhan/Library/CloudStorage/OneDrive-DundalkInstituteofTechnology/DKIT$ Year3/Year3$ Algorithms$ and$ Data$ Structures/ADS_2024_CA2_Jianfeng_Han/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target CA2_C___JianfengHan_SD3A
+# Object build statements for EXECUTABLE target ADS_2024_CA2_Jianfeng_Han
 
 
 #############################################
-# Order-only phony target for CA2_C___JianfengHan_SD3A
+# Order-only phony target for ADS_2024_CA2_Jianfeng_Han
 
-build cmake_object_order_depends_target_CA2_C___JianfengHan_SD3A: phony || .
+build cmake_object_order_depends_target_ADS_2024_CA2_Jianfeng_Han: phony || .
 
-build CMakeFiles/CA2_C___JianfengHan_SD3A.dir/main.cpp.o: CXX_COMPILER__CA2_C___JianfengHan_SD3A_unscanned_Debug /Users/xhanhan/Library/CloudStorage/OneDrive-DundalkInstituteofTechnology/DKIT$ Year3/Year3$ Algorithms$ and$ Data$ Structures/CA2_C++_JianfengHan_SD3A/main.cpp || cmake_object_order_depends_target_CA2_C___JianfengHan_SD3A
-  DEP_FILE = CMakeFiles/CA2_C___JianfengHan_SD3A.dir/main.cpp.o.d
+build CMakeFiles/ADS_2024_CA2_Jianfeng_Han.dir/main.cpp.o: CXX_COMPILER__ADS_2024_CA2_Jianfeng_Han_unscanned_Debug /Users/xhanhan/Library/CloudStorage/OneDrive-DundalkInstituteofTechnology/DKIT$ Year3/Year3$ Algorithms$ and$ Data$ Structures/ADS_2024_CA2_Jianfeng_Han/main.cpp || cmake_object_order_depends_target_ADS_2024_CA2_Jianfeng_Han
+  DEP_FILE = CMakeFiles/ADS_2024_CA2_Jianfeng_Han.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/CA2_C___JianfengHan_SD3A.dir
-  OBJECT_FILE_DIR = CMakeFiles/CA2_C___JianfengHan_SD3A.dir
+  OBJECT_DIR = CMakeFiles/ADS_2024_CA2_Jianfeng_Han.dir
+  OBJECT_FILE_DIR = CMakeFiles/ADS_2024_CA2_Jianfeng_Han.dir
+
+build CMakeFiles/ADS_2024_CA2_Jianfeng_Han.dir/Resource/TreeMap.cpp.o: CXX_COMPILER__ADS_2024_CA2_Jianfeng_Han_unscanned_Debug /Users/xhanhan/Library/CloudStorage/OneDrive-DundalkInstituteofTechnology/DKIT$ Year3/Year3$ Algorithms$ and$ Data$ Structures/ADS_2024_CA2_Jianfeng_Han/Resource/TreeMap.cpp || cmake_object_order_depends_target_ADS_2024_CA2_Jianfeng_Han
+  DEP_FILE = CMakeFiles/ADS_2024_CA2_Jianfeng_Han.dir/Resource/TreeMap.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/ADS_2024_CA2_Jianfeng_Han.dir
+  OBJECT_FILE_DIR = CMakeFiles/ADS_2024_CA2_Jianfeng_Han.dir/Resource
+
+build CMakeFiles/ADS_2024_CA2_Jianfeng_Han.dir/Book.cpp.o: CXX_COMPILER__ADS_2024_CA2_Jianfeng_Han_unscanned_Debug /Users/xhanhan/Library/CloudStorage/OneDrive-DundalkInstituteofTechnology/DKIT$ Year3/Year3$ Algorithms$ and$ Data$ Structures/ADS_2024_CA2_Jianfeng_Han/Book.cpp || cmake_object_order_depends_target_ADS_2024_CA2_Jianfeng_Han
+  DEP_FILE = CMakeFiles/ADS_2024_CA2_Jianfeng_Han.dir/Book.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/ADS_2024_CA2_Jianfeng_Han.dir
+  OBJECT_FILE_DIR = CMakeFiles/ADS_2024_CA2_Jianfeng_Han.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target CA2_C___JianfengHan_SD3A
+# Link build statements for EXECUTABLE target ADS_2024_CA2_Jianfeng_Han
 
 
 #############################################
-# Link the executable CA2_C___JianfengHan_SD3A
+# Link the executable ADS_2024_CA2_Jianfeng_Han
 
-build CA2_C___JianfengHan_SD3A: CXX_EXECUTABLE_LINKER__CA2_C___JianfengHan_SD3A_Debug CMakeFiles/CA2_C___JianfengHan_SD3A.dir/main.cpp.o
+build ADS_2024_CA2_Jianfeng_Han: CXX_EXECUTABLE_LINKER__ADS_2024_CA2_Jianfeng_Han_Debug CMakeFiles/ADS_2024_CA2_Jianfeng_Han.dir/main.cpp.o CMakeFiles/ADS_2024_CA2_Jianfeng_Han.dir/Resource/TreeMap.cpp.o CMakeFiles/ADS_2024_CA2_Jianfeng_Han.dir/Book.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
-  OBJECT_DIR = CMakeFiles/CA2_C___JianfengHan_SD3A.dir
+  OBJECT_DIR = CMakeFiles/ADS_2024_CA2_Jianfeng_Han.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = CA2_C___JianfengHan_SD3A
-  TARGET_PDB = CA2_C___JianfengHan_SD3A.dbg
+  TARGET_FILE = ADS_2024_CA2_Jianfeng_Han
+  TARGET_PDB = ADS_2024_CA2_Jianfeng_Han.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/Users/xhanhan/Library/CloudStorage/OneDrive-DundalkInstituteofTechnology/DKIT Year3/Year3 Algorithms and Data Structures/CA2_C++_JianfengHan_SD3A/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd "/Users/xhanhan/Library/CloudStorage/OneDrive-DundalkInstituteofTechnology/DKIT Year3/Year3 Algorithms and Data Structures/ADS_2024_CA2_Jianfeng_Han/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -87,7 +99,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/Users/xhanhan/Library/CloudStorage/OneDrive-DundalkInstituteofTechnology/DKIT Year3/Year3 Algorithms and Data Structures/CA2_C++_JianfengHan_SD3A/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S"/Users/xhanhan/Library/CloudStorage/OneDrive-DundalkInstituteofTechnology/DKIT Year3/Year3 Algorithms and Data Structures/CA2_C++_JianfengHan_SD3A" -B"/Users/xhanhan/Library/CloudStorage/OneDrive-DundalkInstituteofTechnology/DKIT Year3/Year3 Algorithms and Data Structures/CA2_C++_JianfengHan_SD3A/cmake-build-debug"
+  COMMAND = cd "/Users/xhanhan/Library/CloudStorage/OneDrive-DundalkInstituteofTechnology/DKIT Year3/Year3 Algorithms and Data Structures/ADS_2024_CA2_Jianfeng_Han/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S"/Users/xhanhan/Library/CloudStorage/OneDrive-DundalkInstituteofTechnology/DKIT Year3/Year3 Algorithms and Data Structures/ADS_2024_CA2_Jianfeng_Han" -B"/Users/xhanhan/Library/CloudStorage/OneDrive-DundalkInstituteofTechnology/DKIT Year3/Year3 Algorithms and Data Structures/ADS_2024_CA2_Jianfeng_Han/cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -103,9 +115,9 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: /Users/xhanhan/Library/CloudStorage/OneDrive-DundalkInstituteofTechnology/DKIT Year3/Year3 Algorithms and Data Structures/CA2_C++_JianfengHan_SD3A/cmake-build-debug
+# Folder: /Users/xhanhan/Library/CloudStorage/OneDrive-DundalkInstituteofTechnology/DKIT Year3/Year3 Algorithms and Data Structures/ADS_2024_CA2_Jianfeng_Han/cmake-build-debug
 
-build all: phony CA2_C___JianfengHan_SD3A
+build all: phony ADS_2024_CA2_Jianfeng_Han
 
 # =============================================================================
 # Built-in targets
@@ -114,14 +126,14 @@ build all: phony CA2_C___JianfengHan_SD3A
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake /Users/xhanhan/Library/CloudStorage/OneDrive-DundalkInstituteofTechnology/DKIT$ Year3/Year3$ Algorithms$ and$ Data$ Structures/CA2_C++_JianfengHan_SD3A/CMakeLists.txt CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake /Users/xhanhan/Library/CloudStorage/OneDrive-DundalkInstituteofTechnology/DKIT$ Year3/Year3$ Algorithms$ and$ Data$ Structures/ADS_2024_CA2_Jianfeng_Han/CMakeLists.txt CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake /Users/xhanhan/Library/CloudStorage/OneDrive-DundalkInstituteofTechnology/DKIT$ Year3/Year3$ Algorithms$ and$ Data$ Structures/CA2_C++_JianfengHan_SD3A/CMakeLists.txt CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake: phony
+build /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake /Users/xhanhan/Library/CloudStorage/OneDrive-DundalkInstituteofTechnology/DKIT$ Year3/Year3$ Algorithms$ and$ Data$ Structures/ADS_2024_CA2_Jianfeng_Han/CMakeLists.txt CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake: phony
 
 
 #############################################

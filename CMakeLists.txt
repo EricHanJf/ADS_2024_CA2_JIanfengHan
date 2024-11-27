@@ -1,8 +1,11 @@
 cmake_minimum_required(VERSION 3.29)
-project(CA2_C___JianfengHan_SD3A)
+project(ADS_2024_CA2_Jianfeng_Han)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(CA2_C___JianfengHan_SD3A main.cpp
+add_executable(ADS_2024_CA2_Jianfeng_Han main.cpp
         Header/BinaryTree.h
-        Header/BSTNode.h)
+        Header/BSTNode.h
+        Header/TreeMap.h
+        Resource/TreeMap.cpp
+        Book.cpp)

@@ -15,7 +15,7 @@ public:
 	bool remove(T& item);
 	void clear();
 	int count();
-	T& get(T& item);
+    T& get(T& item);
 
 	void printInOrder();
 	void printInOrder(BSTNode<T> *node);
@@ -25,6 +25,9 @@ public:
 	void printPostOrder(BSTNode<T> *node);
 	T* toArray();
 	~BinaryTree();
+    BSTNode<T>* getRoot() {
+        return root;
+    }
 };
 
 template <class T>
