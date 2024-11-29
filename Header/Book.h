@@ -127,5 +127,41 @@ void sortBooks(const vector<Book>& books, const string& field) {
     delete[] keysArray;
 }
 
+void createIndexByPrice(const vector<Book>& books, TreeMap<double, vector<Book>>& index) {
+    for (const auto& book : books) {
+        // ensure the key exists
+        index.put(book.Price, vector<Book>());
+        // add the book to the price key
+        index.get(book.Price).push_back(book);
+    }
+}
+
+void filterBooksByPrice(TreeMap<double, vector<Book>>& index, double minPrice, double maxPrice) {
+    cout << "Books priced between €" << minPrice << " and €" << maxPrice << ":\n";
+    BinaryTree<double> keysTree = index.keySet(); // get the keys as a BinaryTree
+    auto keysArray = keysTree.toArray();         // Convert BinaryTree to an array
+    int size = keysTree.count();                 // Get the count of keys
+
+    bool found = false;
+    for (int i = 0; i < size; ++i) {
+        double key = keysArray[i]; // access each price key
+        // judgment if the key is within the price range
+        if (key >= minPrice && key <= maxPrice) {
+            const auto& bookList = index.get(key); // get books for the current price
+            for (const auto& book : bookList) {
+                found = true; // if the price is within our range, then we found a match
+                cout << "Book Title: " << book.Title << " by " << book.Author << ", "
+                     << book.yearPublished << ", Genre: " << book.Genre << ", Price: €" << book.Price << endl;
+            }
+        }
+    }
+    delete[] keysArray; // Free allocated memory
+
+    if (!found) {
+        cout << "No books found in the specified price range.\n";
+    }
+}
+
+
 
 #endif //ADS_2024_CA2_JIANFENG_HAN_BOOK_H
