@@ -1,7 +1,3 @@
-//
-// Created by Eric Han on 28/11/2024.
-//
-
 #ifndef ADS_2024_CA2_JIANFENG_HAN_BOOK_H
 #define ADS_2024_CA2_JIANFENG_HAN_BOOK_H
 #include <iostream>
@@ -115,7 +111,7 @@ void sortBooks(const vector<Book>& books, const string& field) {
     // convert BinaryTree to an array
     auto keysArray = keysTree.toArray();
     int size = keysTree.count();    // Get the count of keys
-    for (int i = 0; i < size; ++i) {
+    for (int i = 0; i < size; i++) {
         // Access each key
         const string& key = keysArray[i];
         const auto& bookList = index.get(key); // Get books for the current key
@@ -143,7 +139,7 @@ void filterBooksByPrice(TreeMap<double, vector<Book>>& index, double minPrice, d
     int size = keysTree.count();                 // Get the count of keys
 
     bool found = false;
-    for (int i = 0; i < size; ++i) {
+    for (int i = 0; i < size; i++) {
         double key = keysArray[i]; // access each price key
         // judgment if the key is within the price range
         if (key >= minPrice && key <= maxPrice) {
@@ -155,8 +151,8 @@ void filterBooksByPrice(TreeMap<double, vector<Book>>& index, double minPrice, d
             }
         }
     }
-    delete[] keysArray; // Free allocated memory
-
+    delete[] keysArray;
+    // If we don't find the book we're looking for by the maximum and minimum prices, we return the book not found.
     if (!found) {
         cout << "No books found in the specified price range.\n";
     }
