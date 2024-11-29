@@ -81,12 +81,15 @@ void displayIndex(TreeMap<string, vector<Book>> index) {
     BinaryTree<string> keys = index.keySet();
     auto keysArray = keys.toArray();
     int size = keys.count();
-
     cout << "Index of unique values:\n";
-    for (int i = 0; i < size; ++i) {
+    for (int i = 0; i < size; i++) {
         const auto& key = keysArray[i];
         const auto& books = index.get(key);
-        cout << key << ": " << books.size() << " entries\n";
+        if (books.size() == 1){
+            cout << key << " -> : " << books.size() << " entry\n";
+        }else{
+            cout << key << " -> : " << books.size() << " entries\n";
+        }
     }
     delete[] keysArray; // Free allocated memory
 }
@@ -97,7 +100,7 @@ void viewSubset(TreeMap<string, vector<Book>> index, const string& key) {
         const auto& books = index.get(key);
         cout << "Books with key '" << key << "':\n";
         for (const auto& book : books) {
-            cout << book.Title << " by " << book.Author << ", " << book.yearPublished
+            cout << "Book Title: "<< book.Title << " by " << book.Author << ", " << book.yearPublished
                  << ", Genre: " << book.Genre << ", Price: " << book.Price << endl;
         }
     } else {
