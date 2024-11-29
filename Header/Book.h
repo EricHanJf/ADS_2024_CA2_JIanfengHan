@@ -159,5 +159,4 @@ void filterBooksByPrice(TreeMap<double, vector<Book>>& index, double minPrice, d
 }
 
 
-
 #endif //ADS_2024_CA2_JIANFENG_HAN_BOOK_H

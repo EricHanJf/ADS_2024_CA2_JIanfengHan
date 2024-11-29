@@ -24,6 +24,7 @@ public:
     bool removeKey(const K& key); // remove key from treemap
     BinaryTree<K> keySet();  // Returns a BinaryTree containing all keys in the TreeMap
     V& operator[](const K& key); //Overloads operator[] to retrieve or update value by key
+//    bool isValidLetter(char c);
 };
 
 template <class K, class V>
@@ -114,5 +115,10 @@ BinaryTree<K> TreeMap<K, V>::keySet() {
 template <class K, class V>
 V& TreeMap<K, V>::operator[](const K& key) {
     return get(key);
+}
+
+bool isValidLetter(char c) {
+    c = tolower(c); // Convert to lowercase for consistency
+    return c >= 'a' && c <= 'z'; // Check if it's within the 'a'-'z' range
 }
 #endif //ADS_2024_CA2_Jianfeng_Han_TREEMAP_H
