@@ -70,5 +70,10 @@ int main() {
     // Cleanup dynamic memory if keysArray is dynamically allocated
     delete[] keysArray;
 
+    // Stage 4
+    //csv File path
+    string filename = "/Users/xhanhan/Library/CloudStorage/OneDrive-DundalkInstituteofTechnology/DKIT Year3/Year3 Algorithms and Data Structures/ADS_2024_CA2_Jianfeng_Han/books.csv";  // Update with the correct path to your CSV file
+    vector<Book> books = loadData(filename);
+
     return 0;
 }
