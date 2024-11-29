@@ -58,7 +58,6 @@ bool TreeMap<K, V>::containsKey(const K& key) {
             current = current->getRight();
         }
     }
-
     return false;  // Key not found
 }
 

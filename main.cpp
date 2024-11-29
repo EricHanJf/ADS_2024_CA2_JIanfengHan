@@ -3,6 +3,7 @@
 #include <fstream>
 #include <sstream>
 #include <set>
+#include "Header/Book.h"
 //#include <cctype> // For isalpha and tolower
 
 using namespace std;

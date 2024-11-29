@@ -8,4 +8,5 @@ add_executable(ADS_2024_CA2_Jianfeng_Han main.cpp
         Header/BSTNode.h
         Header/TreeMap.h
         Resource/TreeMap.cpp
-        Book.cpp)
+        Book.cpp
+        Header/Book.h)
