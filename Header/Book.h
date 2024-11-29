@@ -33,29 +33,22 @@ vector<Book> loadData(const string& filename) {
     vector<Book> books;
     ifstream file(filename);
     string line;
-
-    // Skip header
     getline(file, line);
-
     while (getline(file, line)) {
         stringstream ss(line);
         Book book;
         string year, price;
-
         getline(ss, line, ','); // Read ID as string first
         book.ID = stoi(line); // Convert to int
-
         getline(ss, book.Title, ',');
         getline(ss, book.Author, ',');
         getline(ss, year, ',');
         getline(ss, book.Genre, ',');
         getline(ss, price, ',');
-
         book.yearPublished = stoi(year);
         book.Price = stod(price);
         books.push_back(book);
     }
-
     return books;
 }
 
@@ -63,12 +56,16 @@ vector<Book> loadData(const string& filename) {
 void createIndex(const vector<Book>& books, TreeMap<string, vector<Book>>& index, const string& field) {
     for (const auto& book : books) {
         string key;
-        if (field == "title") key = book.Title;
-        else if (field == "author") key = book.Author;
-        else if (field == "year") key = to_string(book.yearPublished);
-        else if (field == "genre") key = book.Genre;
-        else continue;
-
+        if (field == "title")
+            key = book.Title;
+        else if (field == "author")
+            key = book.Author;
+        else if (field == "year")
+            key = to_string(book.yearPublished);
+        else if (field == "genre")
+            key = book.Genre;
+        else
+            continue;
         if (!index.containsKey(key)) {
             index.put(key, vector<Book>());
         }
@@ -101,10 +98,34 @@ void viewSubset(TreeMap<string, vector<Book>> index, const string& key) {
         cout << "Books with key '" << key << "':\n";
         for (const auto& book : books) {
             cout << "Book Title: "<< book.Title << " by " << book.Author << ", " << book.yearPublished
-                 << ", Genre: " << book.Genre << ", Price: " << book.Price << endl;
+                 << ", Genre: " << book.Genre << ", Price: €" << book.Price << endl;
         }
     } else {
         cout << "No entries found for '" << key << "'\n";
     }
 }
+
+// the function to sort all book with key
+void sortBooks(const vector<Book>& books, const string& field) {
+    TreeMap<string, vector<Book>> index;
+    createIndex(books, index, field); // build the index
+    cout << "Books sorted by " << field << ":\n";
+    // get the key as a BinaryTree
+    BinaryTree<string> keysTree = index.keySet();
+    // convert BinaryTree to an array
+    auto keysArray = keysTree.toArray();
+    int size = keysTree.count();    // Get the count of keys
+    for (int i = 0; i < size; ++i) {
+        // Access each key
+        const string& key = keysArray[i];
+        const auto& bookList = index.get(key); // Get books for the current key
+        for (const auto& book : bookList) {
+            cout << "Book Title: " << book.Title << " by " << book.Author << ", "
+                 << book.yearPublished << ", Genre: " << book.Genre << ", Price: €" << book.Price << endl;
+        }
+    }
+    delete[] keysArray;
+}
+
+
 #endif //ADS_2024_CA2_JIANFENG_HAN_BOOK_H
