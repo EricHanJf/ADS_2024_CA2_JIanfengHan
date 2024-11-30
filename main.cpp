@@ -6,11 +6,6 @@
 #include "Header/Book.h"
 using namespace std;
 
-//bool isValidLetter(char c) {
-//    c = tolower(c); // Convert to lowercase for consistency
-//    return c >= 'a' && c <= 'z'; // Check if it's within the 'a'-'z' range
-//}
-
 int main() {
      //Create a TreeMap with char keys and set<string> values
     TreeMap<char, set<string>> wordMap;
