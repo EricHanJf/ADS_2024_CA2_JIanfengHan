@@ -12,9 +12,8 @@
 - Sort books by title, author, publication year, and genre.
 - Unit test using Google Test framework to verify functionality.
 
-## Getting Started
 
-### Prerequisites
+## Prerequisites
 
 - C++
 - Google Test framework for unit testing
